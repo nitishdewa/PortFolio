@@ -99,8 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //text
-consoleText(['A Frontend Developer', 'A problem Solver.', 'An innovative thinker.', 'A...cool guy?', 'Ok......M running out of ideas', 'uhhh...you can scroll down to see my projects now...', 'Seriously my projects are really cool,go check them out!', 'You are uh.... still here?', 'Ok,this has been fun,but M gonna restart the loop now', 'see ya!:)', '', '', ''], 'text', ['tomato', 'rebeccapurple', 'lightblue']);
-
+consoleText(['A Frontend Developer', 'A problem Solver.', 'An innovative thinker.', 'A...cool guy?', 'Ok......M running out of ideas', 'uhhh...you can scroll down to see my projects now...', 'Seriously my projects are really cool,go check them out!', 'You are uh.... still here?', 'Ok,this has been fun,but M gonna restart the loop now', 'see ya!:)'], 'text', ['#a28089', 'rebeccapurple','#9bc400','#cc7502']);
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
@@ -152,48 +151,6 @@ function consoleText(words, id, colors) {
 // text end
 
 document.addEventListener('DOMContentLoaded', function () {
-  const buttons = document.querySelectorAll('.nav-button');
-  const tabs = document.querySelectorAll('.tab-pane');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      const target = this.getAttribute('data-target');
-
-      tabs.forEach(tab => {
-        if (tab.id === target) {
-          tab.classList.add('active');
-        } else {
-          tab.classList.remove('active');
-        }
-      });
-
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  const listItems = document.querySelectorAll('.wrap-4 ul li');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  listItems.forEach(item => {
-    observer.observe(item);
-  });
-});
-
-
-// projects button
-document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.nav-link');
   const containers = document.querySelectorAll('.projects-container');
 
@@ -214,6 +171,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
 //social icon
 // const socialIcons = document.querySelector('.social-links')
 
