@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Wellfleet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -58,6 +60,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin-left: 40em;
+    /* Adjust margin as needed */
     letter-spacing: 2px;
 }
 
@@ -72,15 +75,13 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 25px;
-    transition: background .4s ease-in-out, color .4s ease-in-out, transform .4s ease-in-out, border .4s ease-in-out;
-    border: 2px solid transparent;
+    transition: color .4s ease-in-out, transform .4s ease-in-out;
     position: relative;
     top: 0.5em;
 }
 
 nav ul li a:hover {
     color: #ff9900;
-    border-bottom: 2px solid #ff9900;
     transform: scale(1.1);
 }
 
@@ -88,7 +89,8 @@ nav ul li a::before {
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
+    /* Adjust positioning to match your design */
     width: 100%;
     height: 2px;
     background-color: #ff9900;
@@ -99,6 +101,40 @@ nav ul li a::before {
 nav ul li a:hover::before {
     transform: scaleX(1);
 }
+
+/* Glowing effect for all navigation links */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* Adjust positioning to match your design */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* Initial color for glowing effect */
+    transform: scaleX(1);
+    transition: background-color .4s ease-in-out;
+    z-index: -1;
+    /* Ensure it's behind the text */
+}
+
+nav ul li a:hover::after {
+    background-color: #ff9900;
+    /* Color change on hover */
+    animation: glowing 2s infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 button.custom-button {
     background-color: #ff9900;
@@ -119,6 +155,7 @@ button.custom-button:hover {
 .cssheader .resume a {
     margin-left: 100em;
 }
+
 .cssheader .resume a {
     position: relative;
     padding: 10px 30px;
@@ -133,26 +170,26 @@ button.custom-button:hover {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
     left: 75em;
     top: -1em;
-  }
-  
-  .cssheader .resume a:nth-child(1) {
+}
+
+.cssheader .resume a:nth-child(1) {
     filter: hue-rotate(155deg);
-  }
-  
-  .cssheader .resume a:nth-child(3) {
+}
+
+.cssheader .resume a:nth-child(3) {
     filter: hue-rotate(270deg);
-  }
-  
-  
-  .cssheader .resume a:hover {
+}
+
+
+.cssheader .resume a:hover {
     background: #21ebff;
     color: #111;
     box-shadow: 0 0 50px #21ebff;
     transition-delay: 0.5s;
-  
-  }
-  
-  .cssheader .resume a:before {
+
+}
+
+.cssheader .resume a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -163,15 +200,15 @@ button.custom-button:hover {
     border-left: 2px solid #21ebff;
     transition: 0.5s;
     transition-delay: 0.5s;
-  }
-  
-  .cssheader .resume a:hover:before {
+}
+
+.cssheader .resume a:hover:before {
     width: 100%;
     height: 100%;
     transition-delay: 0s;
-  }
-  
-  .cssheader .resume a:after {
+}
+
+.cssheader .resume a:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -182,13 +219,13 @@ button.custom-button:hover {
     border-right: 2px solid #21ebff;
     transition: 0.5s;
     transition-delay: 0.5s;
-  }
-  
-  .cssheader .resume a:hover:after {
+}
+
+.cssheader .resume a:hover:after {
     width: 100%;
     height: 100%;
     transition-delay: 0s;
-  }
+}
 
 .mob {
     display: none;
@@ -224,7 +261,7 @@ button.custom-button:hover {
     transform: translateY(-50%);
     pointer-events: all;
     pointer-events: all;
-    z-index: 10001;
+    z-index: 10018;
 
 }
 
@@ -500,6 +537,7 @@ section .waves .wave#wave4 {
     top: 50%;
     transform: translateY(-231%);
     right: 1%;
+    z-index: 10010;
 }
 
 .console-underscore {
@@ -509,7 +547,7 @@ section .waves .wave#wave4 {
     left: 10px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .scene .head1 {
     font-size: 40px;
@@ -529,6 +567,37 @@ section .waves .wave#wave4 {
     margin-top: 30px;
 }
 
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+}
+
+.box {
+    background: url(images/IMG_20240608_105303\ \(1\).jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 550px;
+    box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
 .wrap-2a h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -568,8 +637,8 @@ section .waves .wave#wave4 {
 .wrap-2a p:last-of-type {
     margin-top: 20px;
     color: goldenrod;
-    width: 70%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 24px;
     font-family: "Slabo 27px", serif;
 }
 
@@ -583,6 +652,7 @@ section .waves .wave#wave4 {
 .wrap-2b h2 {
     color: #00FFFF;
     font-family: "Arvo", serif;
+    font-size: 2em;
 }
 
 .wrap-2b p {
@@ -615,7 +685,7 @@ section .waves .wave#wave4 {
 }
 
 .single-progress h6 {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 8px;
 }
 
@@ -642,8 +712,8 @@ section .waves .wave#wave4 {
 .label {
     display: inline-block;
     margin-top: 5px;
-    font-size: 14px;
-    color: #666;
+    font-size: 18px;
+    color: #000;
     transition: color 0.3s ease;
 }
 
@@ -652,7 +722,7 @@ section .waves .wave#wave4 {
     margin-bottom: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
 
 .nav-button {
     background: #FD4766;
@@ -719,6 +789,7 @@ ul li a:hover {
 .wrap-3 h2 {
     font-family: "Arvo", serif;
     color: #00FFFF;
+    font-size: 2em;
     /* margin-top: 50px; */
 }
 
@@ -817,7 +888,7 @@ ul li a:hover {
     opacity: 1;
     position: absolute;
     bottom: 4em;
-    ;
+    font-weight: bold;
     /* Adjusted for better placement */
     left: 0;
     right: 0;
@@ -834,6 +905,7 @@ ul li a:hover {
 .wrap-4 h2 {
     color: #00FFFF;
     font-family: "Arvo", serif;
+    font-size: 2em;
 }
 
 .wrap-4 p:first-of-type {
@@ -989,249 +1061,115 @@ ul li a:hover {
 }
 
 .wrap-5 {
-    width: 120em;
+    width: 60em;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 21em;
 }
 
+.wrap-5 h2 {
+    margin-bottom: 20px;
+    font-family: "Arvo", serif;
+    color: #00FFFF;
+    font-size: 2em;
+    margin-left: 7em;
+}
 
 .container {
-    position: relative;
-    left: 16em;
-    /* max-width: 850px; */
-    width: 70%;
-    /* align-items: center; */
-    background: #a1b5b8;
-    padding: 40px 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    perspective: 2700px;
-}
-
-.container .cover {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 50%;
-    z-index: 98;
-    transition: all 1s ease;
-    transform-origin: left;
-    transform-style: preserve-3d;
-}
-
-.container #flip:checked~.cover {
-    transform: rotateY(-180deg);
-}
-
-.container .cover .front,
-.container .cover .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.cover .back {
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.container .cover::before,
-.container .cover::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0.5;
-    z-index: 12;
-}
-
-.container .cover::after {
-    opacity: 0.3;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.container .cover img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 10;
-}
-
-.container .cover .text {
-    position: absolute;
-    z-index: 130;
-    height: 100%;
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2em;
     align-items: center;
     justify-content: center;
+    font-family: "Teko", sans-serif;
+    /* Ensure they are centered horizontally */
 }
 
-.cover .text .text-1,
-.cover .text .text-2 {
-    font-size: 26px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-}
-
-.cover .text .text-2 {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.container .forms {
-    height: 100%;
-    width: 100%;
-    background: #a1b5b8;
-}
-
-.container .form-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.form-content .login-form,
-.form-content .signup-form {
-    width: calc(100% / 2 - 25px);
-}
-
-.forms .form-content .title {
+.cover {
     position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 25em;
+    /* Match the height of the contact-info */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    /* Match the background color of contact-info */
+    border: 2px solid #ccc;
+    /* Match the border */
+    border-radius: 5px;
+    /* Match the border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+}
+
+.cover .front {
+    width: 100%;
+    height: 100%;
+}
+
+.cover .front img {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the entire area */
+    border-radius: 5px;
+    display: block;
+}
+
+.cover .text {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    align-items: center;
+    width: 75%;
+}
+
+.cover .text .text-1 {
     font-size: 24px;
-    font-weight: 500;
-    color: #333;
+    font-weight: bold;
 }
 
-.forms .form-content .title:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 25px;
-    background: #000;
+.cover .text .text-2 {
+    font-size: 18px;
 }
 
-.forms .signup-form .title:before {
-    width: 20px;
-}
-
-.forms .form-content .input-boxes {
-    margin-top: 30px;
-}
-
-.forms .form-content .input-box {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    position: relative;
-}
-
-.form-content .input-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 0 30px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.form-content .input-box input:focus,
-.form-content .input-box input:valid {
-    border-color: #000;
-}
-
-.form-content .input-box i {
-    position: absolute;
-    color: #000;
-    font-size: 17px;
-}
-
-.forms .form-content .text {
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-}
-
-.forms .form-content .text a {
-    text-decoration: none;
-}
-
-.forms .form-content .text a:hover {
-    text-decoration: underline;
-}
-
-.forms .form-content .button {
-    color: #fff;
-    margin-top: 40px;
-    margin-left: 10em;
-}
-
-.forms .form-content .button input {
-    color: #fff;
-    background: #000;
-    border-radius: 6px;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    width: 20em;
-}
-
-.forms .form-content .button input:hover {
-    background: #000;
-}
-
-.forms .form-content label {
-    color: #5b13b9;
-    cursor: pointer;
-}
-
-.forms .form-content label:hover {
-    text-decoration: underline;
-}
-
-.forms .form-content .login-text,
-.forms .form-content .sign-up-text {
+.contact-info {
     text-align: center;
-    margin-top: 25px;
+    background: #a1b5b8;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 25em;
+    /* Ensure it takes full height */
+    width: 150%;
+    max-width: 600px;
+    /* Match the width of the cover */
+    margin-left: 20px;
+    /* Adjust margin as necessary */
+    margin-bottom: 20px;
 }
 
-.container #flip {
-    display: none;
+.contact-info h3 {
+    margin: 0 0 10px;
+    font-size: 40px;
 }
 
-@media (max-width: 730px) {
-    .container .cover {
-        display: none;
-    }
+.contact-info p {
+    margin: 5px 0;
+    font-size: 25px;
+}
 
-    .form-content .login-form,
-    .form-content .signup-form {
-        width: 100%;
-    }
-
-    .form-content .signup-form {
-        display: none;
-    }
-
-    .container #flip:checked~.forms .signup-form {
-        display: block;
-    }
-
-    .container #flip:checked~.forms .login-form {
-        display: none;
-    }
+.wrap-5 .container .contact-info a {
+    color: #FD4766;
 }
 
 footer {
