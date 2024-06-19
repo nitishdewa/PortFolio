@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //text
-consoleText(['A Frontend Developer', 'A problem Solver.', 'An innovative thinker.', 'A...cool guy?', 'Ok......M running out of ideas', 'uhhh...you can scroll down to see my projects now...', 'Seriously my projects are really cool,go check them out!', 'You are uh.... still here?', 'Ok,this has been fun,but M gonna restart the loop now', 'see ya!:)'], 'text', ['#a28089', 'rebeccapurple','#9bc400','#cc7502']);
+consoleText(['A Web Designer', 'A problem Solver.', 'An innovative thinker.', 'A...cool guy?', 'Ok......M running out of ideas', 'uhhh...you can scroll down to see my projects now...', 'Seriously my projects are really cool,go check them out!', 'You are uh.... still here?', 'Ok,this has been fun,but M gonna restart the loop now', 'see ya!:)'], 'text', ['#a28089', 'rebeccapurple','#9bc400','#cc7502']);
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
   var visible = true;
