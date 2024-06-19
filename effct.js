@@ -171,11 +171,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const button = document.querySelector('.mob');
+  const collapseDiv = document.querySelector('.collapse');
 
+  button.addEventListener('click', function () {
+      collapseDiv.classList.toggle('show');
+  });
+});
 
-
-//social icon
-// const socialIcons = document.querySelector('.social-links')
 
 
 

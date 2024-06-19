@@ -17,8 +17,39 @@ body {
     transition: background 0.5s;
 }
 
+ul {
+    list-style: none
+}
+
+button {
+    cursor: pointer
+}
+
+:disabled {
+    cursor: not-allowed
+}
+
+img {
+    align-items: baseline;
+    cursor: pointer
+}
+
+a {
+    text-decoration: none
+}
+
+html {
+    scroll-behavior: smooth
+}
+
 .content-1 {
     background: linear-gradient(#111425, #1a1f54);
+}
+
+.doc-1 {
+    max-width: 1600px;
+    width: 100%;
+    margin: auto
 }
 
 .cssheader {
@@ -59,7 +90,7 @@ nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin-left: 40em;
+    margin-left: 30em;
     /* Adjust margin as needed */
     letter-spacing: 2px;
 }
@@ -153,10 +184,6 @@ button.custom-button:hover {
 }
 
 .cssheader .resume a {
-    margin-left: 100em;
-}
-
-.cssheader .resume a {
     position: relative;
     padding: 10px 30px;
     margin: 0 15px;
@@ -168,8 +195,8 @@ button.custom-button:hover {
     overflow: hidden;
     transition: 0.5s;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
-    left: 75em;
-    top: -1em;
+    left: 15em;
+    top: 0.5em;
 }
 
 .cssheader .resume a:nth-child(1) {
@@ -561,6 +588,9 @@ section .waves .wave#wave4 {
     ;
 }
 
+
+
+
 .wrap-2 {
     display: flex;
     flex-wrap: wrap;
@@ -591,13 +621,16 @@ section .waves .wave#wave4 {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
+
     50% {
         border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
+
     100% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
+
 .wrap-2a h2 {
     font-size: 2em;
     margin-bottom: 10px;
@@ -1067,7 +1100,7 @@ ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: 21em;
+    margin-left: 14em;
 }
 
 .wrap-5 h2 {
@@ -1291,3 +1324,860 @@ footer .wave#wave4 {
         background-position-x: 1000px;
     }
 }
+
+/* responsive */
+@media screen and (max-width:1420px) {
+    nav ul {
+        margin-left: 5em;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .doc-1 {
+        width: 960px
+    }
+
+    nav ul {
+        margin-left: 2em;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    button.custom-button {
+        padding: 8px 16px;
+        font-size: 18px;
+    }
+
+    .cssheader .resume a {
+        right: 2em;
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+
+    /* .console-container {
+        bottom: 10px;  
+    }  */
+
+    .console-container #text {
+        font-size: 16px;
+        /* Adjust font size */
+        line-height: 32px;
+        /* Adjust line height */
+    }
+
+    .console-container #console {
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .cssheader .resume a {
+        left: 10em;
+        /* Adjust left positioning */
+    }
+
+    .scene .head1 {
+        font-size: 30px;
+        /* Adjust font size */
+        margin-left: 1em;
+        /* Adjust margin */
+    }
+
+    .console-container {
+        font-size: 3em;
+        /* Adjust font size */
+        width: 500px;
+        /* Adjust width */
+    }
+
+    .scene .social-links li+li {
+        margin-top: 1.5em;
+    }
+
+    .scene .social-links li+li+li {
+        margin-top: 3em;
+    }
+
+    .scene .social-links li+li+li+li {
+        margin-top: 4.5em;
+    }
+
+    .scene .social-links li+li+li+li+li {
+        margin-top: 6em;
+    }
+
+    .wrap-2 {
+        gap: 20px;
+        /* Reduce gap between items */
+    }
+
+    .wrap-2b {
+        padding: 15px;
+    }
+
+    .wrap-3a .glassBox {
+        max-width: calc(33.33% - 20px);
+        /* Three items per row with gap */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .wrap-4 ul {
+        gap: 1em;
+    }
+
+    .wrap-5 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wrap-5 h2 {
+        margin-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .cover,
+    .contact-info {
+        max-width: 100%;
+    }
+
+    .cover .text {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:980px) {
+    .doc-1 {
+        width: 760px
+    }
+
+    /* nav ul {
+        display: none;
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        background-color: #000;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    } */
+
+
+    .scene .social-links {
+        font-size: 1.5em;
+        right: 1em;
+        bottom: 250%;
+    }
+
+    .scene .social-links li+li {
+        margin-top: 1em;
+    }
+
+    .scene .social-links li+li+li {
+        margin-top: 2em;
+    }
+
+    .scene .social-links li+li+li+li {
+        margin-top: 3em;
+    }
+
+    .scene .social-links li+li+li+li+li {
+        margin-top: 4em;
+    }
+
+    .cssheader {
+        padding: 20px;
+    }
+
+    .cssheader .resume a {
+        left: 5em;
+        /* Adjust left positioning */
+    }
+
+    .scene .head1 {
+        font-size: 25px;
+        /* Adjust font size */
+        margin-left: 0.5em;
+        /* Adjust margin */
+    }
+
+    .console-container {
+        font-size: 2.5em;
+        /* Adjust font size */
+        width: 400px;
+        /* Adjust width */
+    }
+
+    nav img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* nav ul li {
+        margin: 0 10px;
+    }
+     */
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    button.custom-button {
+        font-size: 16px;
+    }
+
+    .cssheader .resume a {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin: 0 5px;
+    }
+
+    .console-container {
+        top: 8em;
+        right: -1em;
+        /* width: 30%; */
+        /* Adjust bottom spacing */
+    }
+
+    .console-container #text {
+        font-size: 16px;
+        /* Adjust font size */
+        line-height: 32px;
+        /* Adjust line height */
+    }
+
+    .console-container #console {
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .wrap-2 {
+        flex-direction: column;
+        /* Stack items vertically on medium screens */
+        gap: 15px;
+        /* Adjust gap between items */
+    }
+
+    .wrapper {
+        height: 250px;
+        /* Adjust image container height for smaller screens */
+    }
+
+    .box {
+        height: 100%;
+        /* Maintain image size */
+        width: 100%;
+    }
+
+    .wrap-2b {
+        order: -1;
+        /* Change the order on mobile */
+    }
+
+    .wrap-2a,
+    .wrap-2b {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .box {
+        height: 400px;
+        /* Adjust box height */
+        width: 400px;
+        /* Adjust box width */
+    }
+
+    .nav-buttons {
+        margin-bottom: 10px;
+    }
+
+    .nav-button {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+
+    .tab-content {
+        max-width: 100%;
+        /* Adjust width for smaller screens */
+    }
+
+    .single-progress {
+        margin-bottom: 15px;
+        /* Adjust spacing */
+    }
+
+    .progress-bar {
+        height: 15px;
+        /* Adjust height */
+    }
+
+    .label {
+        font-size: 16px;
+        /* Adjust font size */
+    }
+
+    .wrap-3a {
+        flex-wrap: wrap;
+    }
+
+    .wrap-3a .glassBox {
+        max-width: calc(50% - 20px);
+        /* Two items per row with gap */
+        margin-bottom: 20px;
+    }
+
+    .wrap-4 {
+        padding: 1rem;
+    }
+
+    .wrap-4 .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .wrap-5 h2 {
+        margin-left: 5em;
+    }
+
+    .wrap-5 {
+        padding: 20px;
+    }
+
+    .container {
+        /* flex-direction: column; */
+        gap: 1em;
+    }
+
+    .contact-info,
+    .cover {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .doc-1 {
+        width: 100%;
+        overflow-x: hidden
+    }
+
+    .collapse ul {
+        position: absolute;
+        display: block;
+        margin-top: 80px;
+        /* right: 50px; */
+        left: 250px;
+        padding-right: 20px;
+        background: linear-gradient(to right, #6f42c1, #4e349e);
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        border: 1px solid #fff;
+        color: #fff;
+        background: black;
+        font-family: Arial, sans-serif;
+        padding: 15px 20px;
+        transition: all .3s ease-in-out;
+        z-index: 10018;
+    }
+
+    .collapse ul:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .3)
+    }
+
+    .collapse ul li a {
+        line-height: 40px
+    }
+
+    .collapse .bold {
+        display: none;
+
+    }
+
+
+    .collapse.show .bold {
+        display: block;
+        z-index: 10030;
+        padding: 10px;
+        margin-top: -6px;
+        width: 40%;
+        height: auto;
+        left: 380px;
+    }
+
+
+        /* Active link styles */
+        .collapse .bold li a.active {
+            font-weight: bold;
+            color: #ff0000;
+            /* Example active color */
+        }
+
+        /* General menu styles */
+        nav {
+            position: relative;
+        }
+
+        .mob {
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .mob span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px 520px;
+            background: white;
+            color: red;
+        }
+
+        .resume a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .cssheader {
+            padding: 20px;
+        }
+
+        .cssheader .resume a {
+            left: 0;
+            /* Adjust left positioning */
+        }
+
+        .scene .head1 {
+            font-size: 20px;
+            /* Adjust font size */
+            margin-left: 0;
+            /* Adjust margin */
+        }
+
+        .console-container {
+            font-size: 2em;
+            /* Adjust font size */
+            width: 300px;
+            /* Adjust width */
+        }
+
+        .cssheader.scrolled {
+            padding: 10px;
+        }
+
+        nav ul {
+            top: 60px;
+        }
+
+        .scene .social-links {
+            font-size: 1.2em;
+            right: 0.5em;
+            bottom: 210%;
+        }
+
+        .scene .social-links li+li {
+            margin-top: 0.5em;
+        }
+
+        .scene .social-links li+li+li {
+            margin-top: 1.5em;
+        }
+
+        .scene .social-links li+li+li+li {
+            margin-top: 2.5em;
+        }
+
+        .scene .social-links li+li+li+li+li {
+            margin-top: 3.5em;
+        }
+
+        .scene .head1 {
+            font-size: 30px;
+            margin-left: 1.5em;
+        }
+
+        .cssheader {
+            padding: 15px;
+        }
+
+        nav img {
+            width: 30px;
+            height: 30px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: flex-end;
+            margin-left: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            font-size: 14px;
+            top: 0;
+        }
+
+        button.custom-button {
+            font-size: 14px;
+        }
+
+        .cssheader .resume a {
+            font-size: 12px;
+            padding: 6px 12px;
+            margin: 0 3px;
+        }
+
+        .mob {
+            display: inline-block;
+        }
+
+        /* .resume {
+        display: none;
+    }
+    .console-container {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        text-align: center;
+        margin-top: 20px; /* Adjust spacing as needed */
+
+
+        .console-container #text {
+            font-size: 14px;
+            /* Adjust font size */
+            line-height: 28px;
+            /* Adjust line height */
+        }
+
+        .console-container #console {
+            font-size: 14px;
+            /* Adjust font size */
+        }
+
+        .box {
+            height: 300px;
+            /* Adjust box height for smaller screens */
+            width: 300px;
+            /* Adjust box width for smaller screens */
+        }
+
+        .wrap-2a p:last-of-type {
+            font-size: 20px;
+            /* Adjust font size */
+        }
+
+        .wrap-3a {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wrap-3a .glassBox {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .wrap-3a .glassBox__imgBox img {
+            height: auto;
+            max-width: 100%;
+            border-radius: 5px 5px 0 0;
+            /* Adjust border radius for image */
+        }
+
+        .wrap-3a .glassBox__content {
+            position: static;
+            /* Remove absolute positioning */
+            padding: 15px;
+        }
+
+        .wrap-3a .glassBox__title {
+            margin-top: 10px;
+            font-size: 18px;
+            /* Adjust title font size */
+        }
+
+        .wrap-3a .glassBox__imgBox button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            /* Adjust button padding */
+            border-radius: 5px;
+            /* Adjust button border radius */
+        }
+
+        .nav-tabs {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-tabs .nav-link {
+            margin-bottom: 1rem;
+        }
+
+        .wrap-4 .card {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        .wrap-4 .nav-tabs {
+            flex-direction: column;
+        }
+
+        .wrap-4 .nav-tabs li {
+            margin-bottom: 10px;
+        }
+
+        .wrap-5 {
+            padding: 20px;
+        }
+
+        .wrap-5 h2 {
+            font-size: 1.5em;
+        }
+
+        .container {
+            gap: 1em;
+        }
+
+        .cover .text {
+            top: 45%;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+        }
+
+    }
+
+    @media screen and (max-width:460px) {
+        .doc-1 {
+            width: 100%;
+            overflow-x: hidden
+        }
+
+        .cssheader {
+            padding: 15px;
+        }
+
+        .cssheader.scrolled {
+            padding: 5px;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        .scene .social-links {
+            font-size: 1em;
+            right: 0.2em;
+            bottom: 170%;
+        }
+
+        .scene .social-links li+li {
+            margin-top: 0.3em;
+        }
+
+        .scene .social-links li+li+li {
+            margin-top: 1em;
+        }
+
+        .scene .social-links li+li+li+li {
+            margin-top: 1.7em;
+        }
+
+        .scene .social-links li+li+li+li+li {
+            margin-top: 2.4em;
+        }
+
+        .scene .head1 {
+            font-size: 25px;
+            margin-left: 1em;
+        }
+
+        nav img {
+            display: none;
+        }
+
+       
+        .mob {
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .mob span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px 340px;
+            background: white;
+            color: red;
+        }
+
+        .collapse.show .bold {
+            display: block;
+            z-index: 10030;
+            padding: 10px;
+            margin-top: -6px;
+            width: 40%;
+            height: auto;
+            left: 200px;}
+        .cssheader .resume a {
+            font-size: 12px;
+            padding: 6px 12px;
+            margin: 0 3px;
+        }
+
+        .console-container {
+            margin-top: 10px;
+            /* Adjust spacing */
+        }
+
+        .console-container #text {
+            font-size: 12px;
+            /* Adjust font size */
+            line-height: 24px;
+            /* Adjust line height */
+        }
+
+        .console-container #console {
+            font-size: 12px;
+            /* Adjust font size */
+        }
+        .social-links{right: 300em;}
+
+        .box {
+            height: 300px;
+            /* Adjust box height for smaller screens */
+            width: 300px;
+            /* Adjust box width for smaller screens */
+        }
+
+        .wrap-2 h2,
+        .wrap-2b h2 {
+            font-size: 1.8em;
+            /* Decrease heading font size */
+        }
+
+        .wrap-2 h3,
+        .wrap-2a h3 {
+            font-size: 1.3em;
+            /* Decrease subheading font size */
+        }
+
+        .single-progress h6 {
+            font-size: 1em;
+            /* Decrease skill title font size */
+        }
+
+        .nav-button {
+            padding: 10px 18px;
+            /* Adjust button padding */
+            font-size: 0.9em;
+            /* Decrease button font size */
+        }
+
+        .wrap-2a p:last-of-type {
+            font-size: 20px;
+            /* Adjust font size */
+        }
+
+        .wrap-4 .card {
+            flex: 1 1 calc(100% - 20px);
+        }
+
+        .wrap-4 h2 {
+            font-size: 2em;
+        }
+
+        .wrap-4 p {
+            font-size: 1em;
+        }
+
+        .card {
+            max-width: 100%;
+        }
+
+        .wrap-5 {
+            padding: 15px;
+        }
+
+        .wrap-5 h2 {
+            font-size: 1.2em;
+        }
+
+        .container {
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .cover,
+        .contact-info {
+            height: auto;
+        }
+
+        .cover .text {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+        }
+
+        .cover .text .text-1 {
+            font-size: 20px;
+        }
+
+        .cover .text .text-2 {
+            font-size: 16px;
+        }
+
+        .contact-info h3 {
+            font-size: 24px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+        }
+    }
