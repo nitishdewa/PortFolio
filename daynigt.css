@@ -289,22 +289,6 @@ button.custom-button:hover {
 
 }
 
-.scene .social-links li+li {
-    margin-top: 1.5em;
-}
-
-.scene .social-links li+li+li {
-    margin-top: 3em;
-}
-
-.scene .social-links li+li+li+li {
-    margin-top: 4.5em;
-}
-
-.scene .social-links li+li+li+li+li {
-    margin-top: 6em;
-}
-
 .scene .social-links i {
     -webkit-transition: color 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
     transition: color 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
