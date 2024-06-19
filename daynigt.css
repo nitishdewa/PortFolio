@@ -91,7 +91,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin-left: 30em;
-    /* Adjust margin as needed */
     letter-spacing: 2px;
 }
 
@@ -121,7 +120,7 @@ nav ul li a::before {
     position: absolute;
     left: 0;
     bottom: -2px;
-    /* Adjust positioning to match your design */
+
     width: 100%;
     height: 2px;
     background-color: #ff9900;
@@ -133,26 +132,24 @@ nav ul li a:hover::before {
     transform: scaleX(1);
 }
 
-/* Glowing effect for all navigation links */
 nav ul li a::after {
     content: '';
     position: absolute;
     bottom: -2px;
-    /* Adjust positioning to match your design */
+
     left: 0;
     width: 100%;
     height: 2px;
     background-color: #fff;
-    /* Initial color for glowing effect */
+ 
     transform: scaleX(1);
     transition: background-color .4s ease-in-out;
     z-index: -1;
-    /* Ensure it's behind the text */
+
 }
 
 nav ul li a:hover::after {
     background-color: #ff9900;
-    /* Color change on hover */
     animation: glowing 2s infinite alternate;
 }
 
@@ -480,19 +477,19 @@ button.custom-button:hover {
 
 section .waves {
     position: absolute;
-    /* Change to absolute to position at the bottom of .scene */
+
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100px;
-    /* Adjust height as needed */
+
 }
 
 section .waves .wave {
     position: absolute;
     left: 0;
     bottom: 0;
-    /* Position waves at the bottom of .scene */
+
     width: 100%;
     height: 100px;
     background: url(images/wave.png);
@@ -508,7 +505,7 @@ section .waves .wave#wave1 {
 section .waves .wave#wave2 {
     opacity: 0.5;
     bottom: 10px;
-    /* Adjust position */
+
     z-index: 999;
     animation: animate2 4s linear infinite;
 }
@@ -516,7 +513,7 @@ section .waves .wave#wave2 {
 section .waves .wave#wave3 {
     opacity: 0.2;
     bottom: 20px;
-    /* Adjust position */
+
     z-index: 998;
     animation: animate 2s linear infinite;
 }
@@ -524,7 +521,7 @@ section .waves .wave#wave3 {
 section .waves .wave#wave4 {
     opacity: 0.7;
     bottom: 30px;
-    /* Adjust position */
+
     z-index: 999;
     animation: animate2 2s linear infinite;
 }
@@ -779,7 +776,6 @@ section .waves .wave#wave4 {
 
 .nav-button:focus {
     outline: none;
-    /* Optional: Remove default focus outline */
 }
 
 
@@ -823,7 +819,7 @@ ul li a:hover {
     font-family: "Arvo", serif;
     color: #00FFFF;
     font-size: 2em;
-    /* margin-top: 50px; */
+
 }
 
 .wrap-3 p {
@@ -839,7 +835,7 @@ ul li a:hover {
     gap: 20px;
 }
 
-/* Styles for .glassBox */
+
 .wrap-3a .glassBox {
     box-sizing: border-box;
     transition: transform 400ms, box-shadow 400ms;
@@ -853,7 +849,6 @@ ul li a:hover {
     border-right-color: rgba(255, 255, 255, 0.1);
     border-bottom-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2);
-    /* Initial shadow */
     padding: 15px;
     position: relative;
     display: flex;
@@ -863,7 +858,6 @@ ul li a:hover {
 
 
 
-/* Styles for .glassBox__imgBox */
 .wrap-3a .glassBox__imgBox {
     text-align: center;
     margin-bottom: 15px;
@@ -886,12 +880,11 @@ ul li a:hover {
     font-family: "Lato", sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    /* Transition only background-color and border-color */
+
     outline: none;
     z-index: 1;
     margin-top: 1em;
     border-radius: 20px;
-    /* Rounded corners */
     font-family: "Oxygen", sans-serif;
 }
 
@@ -901,7 +894,7 @@ ul li a:hover {
 }
 
 
-/* Styles for .glassBox__title */
+
 .wrap-3a .glassBox__title {
     text-align: center;
     color: #000;
@@ -911,7 +904,6 @@ ul li a:hover {
     margin-top: 15px;
 }
 
-/* Styles for .glassBox__content */
 .wrap-3a .glassBox__content {
     text-align: center;
     color: #000;
@@ -922,12 +914,11 @@ ul li a:hover {
     position: absolute;
     bottom: 4em;
     font-weight: bold;
-    /* Adjusted for better placement */
+
     left: 0;
     right: 0;
 }
 
-/* */
 
 .wrap-4 {
     align-items: center;
@@ -991,9 +982,8 @@ ul li a:hover {
 .wrap-4 .card span {
     width: 100%;
     height: 400px;
-    /* Ensure it has a height */
+ 
     background-size: cover;
-    /* Ensures the image covers the entire span */
     background-position: top;
     transition: background-position 4s ease-in-out;
 }
@@ -1015,14 +1005,12 @@ ul li a:hover {
     padding-top: 5px;
     transition: height 0.3s ease;
     overflow: hidden;
-    /* Ensure content is hidden when height is 0 */
     display: none;
-    /* Initially hidden */
+
 }
 
 .wrap-4 .card:hover .details {
     display: block;
-    /* Show details when card is hovered */
     height: 45%;
 }
 
@@ -1034,7 +1022,7 @@ ul li a:hover {
 .wrap-4 .details p {
     font-size: 20px;
     color: #fff;
-    /* Adjust text color for better visibility */
+
 }
 
 .wrap-4 .main-btn {
@@ -1118,7 +1106,6 @@ ul li a:hover {
     align-items: center;
     justify-content: center;
     font-family: "Teko", sans-serif;
-    /* Ensure they are centered horizontally */
 }
 
 .cover {
@@ -1126,16 +1113,15 @@ ul li a:hover {
     width: 100%;
     max-width: 600px;
     height: 25em;
-    /* Match the height of the contact-info */
     display: flex;
     justify-content: center;
     align-items: center;
     background: #fff;
-    /* Match the background color of contact-info */
+
     border: 2px solid #ccc;
-    /* Match the border */
+
     border-radius: 5px;
-    /* Match the border radius */
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 
@@ -1150,7 +1136,6 @@ ul li a:hover {
     width: 150%;
     height: 100%;
     object-fit: cover;
-    /* Ensure the image covers the entire area */
     border-radius: 5px;
     display: block;
 }
@@ -1182,12 +1167,10 @@ ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 25em;
-    /* Ensure it takes full height */
     width: 150%;
     max-width: 600px;
-    /* Match the width of the cover */
+
     margin-left: 20px;
-    /* Adjust margin as necessary */
     margin-bottom: 20px;
 }
 
@@ -1360,39 +1343,35 @@ footer .wave#wave4 {
         padding: 8px 25px;
     }
 
-    /* .console-container {
-        bottom: 10px;  
-    }  */
-
     .console-container #text {
         font-size: 16px;
-        /* Adjust font size */
+  
         line-height: 32px;
-        /* Adjust line height */
+
     }
 
     .console-container #console {
         font-size: 16px;
-        /* Adjust font size */
+
     }
 
     .cssheader .resume a {
         left: 10em;
-        /* Adjust left positioning */
+
     }
 
     .scene .head1 {
         font-size: 30px;
-        /* Adjust font size */
+    
         margin-left: 1em;
-        /* Adjust margin */
+
     }
 
     .console-container {
         font-size: 3em;
-        /* Adjust font size */
+     
         width: 500px;
-        /* Adjust width */
+    
     }
 
     .scene .social-links li+li {
@@ -1413,7 +1392,7 @@ footer .wave#wave4 {
 
     .wrap-2 {
         gap: 20px;
-        /* Reduce gap between items */
+  
     }
 
     .wrap-2b {
@@ -1422,7 +1401,7 @@ footer .wave#wave4 {
 
     .wrap-3a .glassBox {
         max-width: calc(33.33% - 20px);
-        /* Three items per row with gap */
+    
     }
 
     .projects-container {
@@ -1468,27 +1447,6 @@ footer .wave#wave4 {
         width: 760px
     }
 
-    /* nav ul {
-        display: none;
-        position: fixed;
-        width: 100%;
-        top: 70px;
-        left: 0;
-        background-color: #000;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        z-index: 1000;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 20px 0;
-    } */
 
 
     .scene .social-links {
@@ -1519,21 +1477,21 @@ footer .wave#wave4 {
 
     .cssheader .resume a {
         left: 5em;
-        /* Adjust left positioning */
+   
     }
 
     .scene .head1 {
         font-size: 25px;
-        /* Adjust font size */
+   
         margin-left: 0.5em;
-        /* Adjust margin */
+    
     }
 
     .console-container {
         font-size: 2.5em;
-        /* Adjust font size */
+     
         width: 400px;
-        /* Adjust width */
+  
     }
 
     nav img {
@@ -1541,10 +1499,7 @@ footer .wave#wave4 {
         height: 40px;
     }
 
-    /* nav ul li {
-        margin: 0 10px;
-    }
-     */
+    
     nav ul li a {
         font-size: 16px;
     }
@@ -1562,43 +1517,39 @@ footer .wave#wave4 {
     .console-container {
         top: 8em;
         right: -1em;
-        /* width: 30%; */
-        /* Adjust bottom spacing */
+       
     }
 
     .console-container #text {
         font-size: 16px;
-        /* Adjust font size */
-        line-height: 32px;
-        /* Adjust line height */
+   
     }
 
     .console-container #console {
         font-size: 16px;
-        /* Adjust font size */
+      
     }
 
     .wrap-2 {
         flex-direction: column;
-        /* Stack items vertically on medium screens */
+  
         gap: 15px;
-        /* Adjust gap between items */
+  
     }
 
     .wrapper {
         height: 250px;
-        /* Adjust image container height for smaller screens */
+
     }
 
     .box {
         height: 100%;
-        /* Maintain image size */
         width: 100%;
     }
 
     .wrap-2b {
         order: -1;
-        /* Change the order on mobile */
+    
     }
 
     .wrap-2a,
@@ -1609,9 +1560,9 @@ footer .wave#wave4 {
 
     .box {
         height: 400px;
-        /* Adjust box height */
+  
         width: 400px;
-        /* Adjust box width */
+  
     }
 
     .nav-buttons {
@@ -1625,22 +1576,22 @@ footer .wave#wave4 {
 
     .tab-content {
         max-width: 100%;
-        /* Adjust width for smaller screens */
+
     }
 
     .single-progress {
         margin-bottom: 15px;
-        /* Adjust spacing */
+
     }
 
     .progress-bar {
         height: 15px;
-        /* Adjust height */
+      
     }
 
     .label {
         font-size: 16px;
-        /* Adjust font size */
+    
     }
 
     .wrap-3a {
@@ -1649,7 +1600,7 @@ footer .wave#wave4 {
 
     .wrap-3a .glassBox {
         max-width: calc(50% - 20px);
-        /* Two items per row with gap */
+    
         margin-bottom: 20px;
     }
 
@@ -1674,7 +1625,6 @@ footer .wave#wave4 {
     }
 
     .container {
-        /* flex-direction: column; */
         gap: 1em;
     }
 
@@ -1699,7 +1649,6 @@ footer .wave#wave4 {
         position: absolute;
         display: block;
         margin-top: 80px;
-        /* right: 50px; */
         left: 250px;
         padding-right: 20px;
         background: linear-gradient(to right, #6f42c1, #4e349e);
@@ -1740,14 +1689,13 @@ footer .wave#wave4 {
     }
 
 
-        /* Active link styles */
+    
         .collapse .bold li a.active {
             font-weight: bold;
             color: #ff0000;
-            /* Example active color */
+         
         }
 
-        /* General menu styles */
         nav {
             position: relative;
         }
@@ -1779,21 +1727,21 @@ footer .wave#wave4 {
 
         .cssheader .resume a {
             left: 0;
-            /* Adjust left positioning */
+        
         }
 
         .scene .head1 {
             font-size: 20px;
-            /* Adjust font size */
+        
             margin-left: 0;
-            /* Adjust margin */
+       
         }
 
         .console-container {
             font-size: 2em;
-            /* Adjust font size */
+          
             width: 300px;
-            /* Adjust width */
+           
         }
 
         .cssheader.scrolled {
@@ -1869,40 +1817,31 @@ footer .wave#wave4 {
             display: inline-block;
         }
 
-        /* .resume {
-        display: none;
-    }
-    .console-container {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: none;
-        text-align: center;
-        margin-top: 20px; /* Adjust spacing as needed */
+
 
 
         .console-container #text {
             font-size: 14px;
-            /* Adjust font size */
+          
             line-height: 28px;
-            /* Adjust line height */
+            
         }
 
         .console-container #console {
             font-size: 14px;
-            /* Adjust font size */
+          
         }
 
         .box {
             height: 300px;
-            /* Adjust box height for smaller screens */
+          
             width: 300px;
-            /* Adjust box width for smaller screens */
+       
         }
 
         .wrap-2a p:last-of-type {
             font-size: 20px;
-            /* Adjust font size */
+         
         }
 
         .wrap-3a {
@@ -1920,27 +1859,27 @@ footer .wave#wave4 {
             height: auto;
             max-width: 100%;
             border-radius: 5px 5px 0 0;
-            /* Adjust border radius for image */
+          
         }
 
         .wrap-3a .glassBox__content {
             position: static;
-            /* Remove absolute positioning */
+         
             padding: 15px;
         }
 
         .wrap-3a .glassBox__title {
             margin-top: 10px;
             font-size: 18px;
-            /* Adjust title font size */
+        
         }
 
         .wrap-3a .glassBox__imgBox button {
             margin-top: 15px;
             padding: 12px 24px;
-            /* Adjust button padding */
+         
             border-radius: 5px;
-            /* Adjust button border radius */
+          
         }
 
         .nav-tabs {
@@ -2072,56 +2011,56 @@ footer .wave#wave4 {
 
         .console-container {
             margin-top: 10px;
-            /* Adjust spacing */
+         
         }
 
         .console-container #text {
             font-size: 12px;
-            /* Adjust font size */
+           
             line-height: 24px;
-            /* Adjust line height */
+          
         }
 
         .console-container #console {
             font-size: 12px;
-            /* Adjust font size */
+         
         }
         .social-links{right: 300em;}
 
         .box {
             height: 300px;
-            /* Adjust box height for smaller screens */
+            
             width: 300px;
-            /* Adjust box width for smaller screens */
+            
         }
 
         .wrap-2 h2,
         .wrap-2b h2 {
             font-size: 1.8em;
-            /* Decrease heading font size */
+            
         }
 
         .wrap-2 h3,
         .wrap-2a h3 {
             font-size: 1.3em;
-            /* Decrease subheading font size */
+      
         }
 
         .single-progress h6 {
             font-size: 1em;
-            /* Decrease skill title font size */
+       
         }
 
         .nav-button {
             padding: 10px 18px;
-            /* Adjust button padding */
+  
             font-size: 0.9em;
-            /* Decrease button font size */
+     
         }
 
         .wrap-2a p:last-of-type {
             font-size: 20px;
-            /* Adjust font size */
+         
         }
 
         .wrap-4 .card {

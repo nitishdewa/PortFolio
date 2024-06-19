@@ -1,47 +1,47 @@
-// Function to initialize the page with moon displayed and sun hidden
+
 function initializePage() {
   const body = document.querySelector('body');
   const moon = document.querySelector('.moon');
   const sun = document.querySelector('.sun');
 
-  body.classList.add('dark'); // Start with dark mode (moon effect)
-  sun.style.display = 'none'; // Initially hide the sun
-  moon.style.display = 'block'; // Initially show the moon
+  body.classList.add('dark'); 
+  sun.style.display = 'none'; 
+  moon.style.display = 'block'; 
 }
 
-// Function to handle click events on moon
+
 function handleMoonClick() {
   const body = document.querySelector('body');
   const moon = document.querySelector('.moon');
   const sun = document.querySelector('.sun');
 
-  body.classList.remove('dark'); // Remove dark mode (moon effect)
-  moon.style.transform = 'translateX(50%)'; // Shift moon to the right
-  sun.style.transform = 'translateX(0%)'; // Reset sun to original position
+  body.classList.remove('dark'); 
+  moon.style.transform = 'translateX(50%)'; 
+  sun.style.transform = 'translateX(0%)'; 
   setTimeout(() => {
     moon.style.display = 'none';
     sun.style.display = 'block';
-  }, 300); // Delayed switch after animation
+  }, 300); 
 }
 
-// Function to handle click events on sun
+
 function handleSunClick() {
   const body = document.querySelector('body');
   const moon = document.querySelector('.moon');
   const sun = document.querySelector('.sun');
 
-  body.classList.add('dark'); // Apply dark mode (sun effect)
-  sun.style.transform = 'translateX(-50%)'; // Shift sun to the left
-  moon.style.transform = 'translateX(calc(-50% - 60px))'; // Shift moon to the left more than half of its radius
+  body.classList.add('dark');
+  sun.style.transform = 'translateX(-50%)'; 
+  moon.style.transform = 'translateX(calc(-50% - 60px))'; 
   setTimeout(() => {
     sun.style.display = 'none';
     moon.style.display = 'block';
-  }, 300); // Delayed switch after animation
+  }, 300); 
 }
 
-// Event listeners
+
 document.addEventListener('DOMContentLoaded', () => {
-  initializePage(); // Initialize page with moon effect
+  initializePage(); /
   const moon = document.querySelector('.moon');
   const sun = document.querySelector('.sun');
 
@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
   sun.addEventListener('click', handleSunClick);
 });
 
-// Stars function remains the same as you have it
 function stars() {
   const count = 500;
   const scene = document.querySelector(".scene");
@@ -72,7 +71,7 @@ function stars() {
   }
 }
 
-stars(); // Call the stars function to generate stars on the scene
+stars(); 
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -98,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//text
 consoleText(['A Web Designer', 'A problem Solver.', 'An innovative thinker.', 'A...cool guy?', 'Ok......M running out of ideas', 'uhhh...you can scroll down to see my projects now...', 'Seriously my projects are really cool,go check them out!', 'You are uh.... still here?', 'Ok,this has been fun,but M gonna restart the loop now', 'see ya!:)'], 'text', ['#a28089', 'rebeccapurple','#9bc400','#cc7502']);
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -148,7 +146,6 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
-// text end
 
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.nav-link');
