@@ -41,7 +41,7 @@ function handleSunClick() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  initializePage(); /
+  initializePage(); 
   const moon = document.querySelector('.moon');
   const sun = document.querySelector('.sun');
 
