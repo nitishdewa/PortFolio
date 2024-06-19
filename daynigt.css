@@ -280,7 +280,7 @@ button.custom-button:hover {
     position: absolute;
     font-size: 2.5em;
     right: 2em;
-    bottom: 290%;
+    bottom: 200%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     pointer-events: all;
