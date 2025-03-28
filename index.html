@@ -210,36 +210,66 @@
             <div class="wrap-4" id="PROJECTS">
                 <h2>My Latest Projects</h2>
                 <p>The following are a few of my completed projects. Have a look!</p>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="psd-tab" data-bs-toggle="tab" data-bs-target="#tab-psd"
-                            data-category="psd" type="button" role="tab" aria-controls="tab-psd" aria-selected="true">PSD TO HTML</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="figma-tab" data-bs-toggle="tab" data-bs-target="#tab-figma"
-                            data-category="figma" type="button" role="tab" aria-controls="tab-figma" aria-selected="false">FIGMA</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="fetch-tab" data-bs-toggle="tab" data-bs-target="#tab-fetch"
-                            data-category="fetch" type="button" role="tab" aria-controls="tab-fetch" aria-selected="false">FETCH API</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="sass-tab" data-bs-toggle="tab" data-bs-target="#tab-sass"
-                            data-category="sass" type="button" role="tab" aria-controls="tab-sass" aria-selected="false">PSD TO SASS</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#tab-bootstrap"
-                            data-category="bootstrap" type="button" role="tab" aria-controls="tab-bootstrap" aria-selected="false">BOOTSTRAP</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#tab-js"
-                            data-category="js" type="button" role="tab" aria-controls="tab-js" aria-selected="false">JAVASCRIPT</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#tab-react"
-                            data-category="react" type="button" role="tab" aria-controls="tab-react" aria-selected="false">REACT</button>
-                    </li>
-                </ul>
+                
+                <!-- First Tab Group -->
+                <div class="tabs-container">
+                    <!-- First Row -->
+                    <ul class="nav nav-tabs d-flex justify-content-center mb-2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="psd-tab" data-bs-toggle="tab" data-bs-target="#tab-psd"
+                                data-category="psd" type="button" role="tab" aria-controls="tab-psd" aria-selected="true">
+                                <i class="fas fa-file-image"></i> PSD TO HTML
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#tab-bootstrap"
+                                data-category="bootstrap" type="button" role="tab" aria-controls="tab-bootstrap" aria-selected="false">
+                                <i class="fab fa-bootstrap"></i> BOOTSTRAP
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#tab-js"
+                                data-category="js" type="button" role="tab" aria-controls="tab-js" aria-selected="false">
+                                <i class="fab fa-js-square"></i> JAVASCRIPT
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="live-tab" data-bs-toggle="tab" data-bs-target="#tab-live"
+                                data-category="live" type="button" role="tab" aria-controls="tab-live" aria-selected="false">
+                                <i class="fas fa-globe"></i> LIVE PROJECTS
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    <!-- Second Row -->
+                    <ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="figma-tab" data-bs-toggle="tab" data-bs-target="#tab-figma"
+                                data-category="figma" type="button" role="tab" aria-controls="tab-figma" aria-selected="false">
+                                <i class="fab fa-figma"></i> FIGMA
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#tab-react"
+                                data-category="react" type="button" role="tab" aria-controls="tab-react" aria-selected="false">
+                                <i class="fab fa-react"></i> REACT
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sass-tab" data-bs-toggle="tab" data-bs-target="#tab-sass"
+                                data-category="sass" type="button" role="tab" aria-controls="tab-sass" aria-selected="false">
+                                <i class="fab fa-sass"></i> SASS
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fetch-tab" data-bs-toggle="tab" data-bs-target="#tab-fetch"
+                                data-category="fetch" type="button" role="tab" aria-controls="tab-fetch" aria-selected="false">
+                                <i class="fas fa-cloud"></i> FETCH API
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                
             
                 <!-- PSD TO HTML -->
                 <div class="projects-container psd active">
@@ -274,7 +304,7 @@
                     <div class="card p-0">
                         <div class="details">
                             <h3>Figma to HTML Project</h3>
-                          <p>  "Converted Figma designs into responsive websites, preserving design accuracy and delivering modern UX."</p>
+                          <p>"Converted Figma designs into responsive websites, preserving design accuracy and delivering modern UX."</p>
                             <a href="https://dairy-trends.vercel.app/" class="main-btn">Visit Site</a>
                         </div>
                         <span style="background-image: url('images/dairy-trends.vercel.app_.png');"></span>
@@ -308,7 +338,7 @@
                         <div class="details">
                             <h3>PSD to SASS Project 1</h3>
                             <p>"Converted PSD to a website using SASS for cleaner, maintainable, and efficient CSS workflows."</p>
-                            <a href="https://app.netlify.com/sites/roaring-genie-62ff12/overview" class="main-btn">Visit Site</a>
+                            <a href="https://roaring-genie-62ff12.netlify.app/" class="main-btn">Visit Site</a>
                         </div>
                         <span style="background-image: url('images/roaring-genie-62ff12.netlify.app.jpeg');"></span>
                     </div>
@@ -371,6 +401,34 @@
                             <a href="https://searchimagesnitish.netlify.app/" class="main-btn">Visit Site</a>
                         </div>
                         <span style="background-image: url('images/Screenshot_13-10-2024_10419_searchimagesnitish.netlify.app.jpeg');"></span>
+                    </div>
+                </div>
+                
+                <!-- LIVE PROJECTS -->
+                <div class="projects-container live">
+                    <div class="card p-0">
+                        <div class="details">
+                            <h3>E-commerce Website</h3>
+                            <p>"A fully functional e-commerce platform with product listings, cart functionality, and secure checkout process."</p>
+                            <a href="https://www.cgphotographytrade.com/" class="main-btn">Visit Site</a>
+                        </div>
+                        <span style="background-image: url('images/www.cgphotographytrade.com_.png');"></span>
+                    </div>
+                    <div class="card p-0">
+                        <div class="details">
+                            <h3>Business Management Dashboard</h3>
+                            <p>"A comprehensive dashboard for business analytics with real-time data visualization and reporting tools."</p>
+                            <a href="https://ushaindustries.in/" class="main-btn">Visit Site</a>
+                        </div>
+                        <span style="background-image: url('images/ushaindustries.in_.png');"></span>
+                    </div>
+                    <div class="card p-0">
+                        <div class="details">
+                            <h3>Healthcare Appointment System</h3>
+                            <p>"An online platform for patients to book appointments with healthcare providers and manage their medical visits."</p>
+                            <a href="#" class="main-btn">Visit Site</a>
+                        </div>
+                        <span style="background-image: url('images/healthcare-placeholder.jpg');"></span>
                     </div>
                 </div>
             </div>
